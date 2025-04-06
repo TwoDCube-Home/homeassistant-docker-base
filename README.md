@@ -1,3 +1,9 @@
+# Building
+
+```shell
+podman build . --build-arg BASHIO_VERSION=0.16.2 --build-arg TEMPIO_VERSION=2024.11.2 --build-arg S6_OVERLAY_VERSION=3.1.6.2 --build-arg BUILD_ARCH=amd64 --build-arg BUILD_FROM=registry.access.redhat.com/ubi9/ubi:9.5 -t ghcr.io/twodcube-home/homeassistant-docker-base:2025.02.0
+```
+
 # Home Assistant Base Images
 
 These base images are designed as Docker base images for use with building Home Assistant containers and add-ons.

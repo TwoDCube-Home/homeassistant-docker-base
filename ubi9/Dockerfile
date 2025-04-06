@@ -34,9 +34,8 @@ RUN \
         bash \
         jq \
         tzdata \
-        curl \
         ca-certificates \
-        xz-utils \
+        xz \
     \
     && if [ "${BUILD_ARCH}" = "armv7" ]; then \
             export S6_ARCH="arm"; \
